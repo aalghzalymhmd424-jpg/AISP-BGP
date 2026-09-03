@@ -1,0 +1,61 @@
+name: aisp-hybrid-lab
+
+topology:
+  nodes:
+    r1:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./r1/frr.conf:/etc/frr/frr.conf
+        - ./daemons:/etc/frr/daemons
+    r2:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./r2/frr.conf:/etc/frr/frr.conf
+        - ./daemons:/etc/frr/daemons
+    r3:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./r3/frr.conf:/etc/frr/frr.conf
+        - ./daemons:/etc/frr/daemons
+    r4:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./r4/frr.conf:/etc/frr/frr.conf
+        - ./daemons:/etc/frr/daemons
+    r5:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./r5/frr.conf:/etc/frr/frr.conf
+        - ./daemons:/etc/frr/daemons
+    r6:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./r6/frr.conf:/etc/frr/frr.conf
+        - ./daemons:/etc/frr/daemons
+    r7:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./r7/frr.conf:/etc/frr/frr.conf
+        - ./daemons:/etc/frr/daemons
+    r8:
+      kind: linux
+      image: frrouting/frr:latest
+      binds:
+        - ./r8/frr.conf:/etc/frr/frr.conf
+        - ./daemons:/etc/frr/daemons
+
+  links:
+    - endpoints: ["r1:eth1", "r2:eth1"]
+    - endpoints: ["r2:eth2", "r3:eth1"]
+    - endpoints: ["r3:eth2", "r4:eth1"]
+    - endpoints: ["r4:eth2", "r5:eth1"]
+    - endpoints: ["r5:eth2", "r6:eth1"]
+    - endpoints: ["r6:eth2", "r7:eth1"]
+    - endpoints: ["r7:eth2", "r8:eth1"]

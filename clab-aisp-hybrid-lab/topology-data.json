@@ -1,0 +1,383 @@
+{
+  "name": "aisp-hybrid-lab",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-48ba4a0dbe03",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "r1": {
+      "index": "0",
+      "shortname": "r1",
+      "longname": "clab-aisp-hybrid-lab-r1",
+      "fqdn": "r1.aisp-hybrid-lab.io",
+      "group": "",
+      "labdir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r1",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.8",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::8",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-48ba4a0dbe03",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r1",
+        "clab-node-longname": "clab-aisp-hybrid-lab-r1",
+        "clab-node-name": "r1",
+        "clab-node-type": "",
+        "clab-owner": "aalghzalymhmd424",
+        "clab-topo-file": "/home/aalghzalymhmd424/aisp_hybrid_lab/topology.clab.yml",
+        "containerlab": "aisp-hybrid-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r2": {
+      "index": "1",
+      "shortname": "r2",
+      "longname": "clab-aisp-hybrid-lab-r2",
+      "fqdn": "r2.aisp-hybrid-lab.io",
+      "group": "",
+      "labdir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r2",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.9",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::9",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-48ba4a0dbe03",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r2",
+        "clab-node-longname": "clab-aisp-hybrid-lab-r2",
+        "clab-node-name": "r2",
+        "clab-node-type": "",
+        "clab-owner": "aalghzalymhmd424",
+        "clab-topo-file": "/home/aalghzalymhmd424/aisp_hybrid_lab/topology.clab.yml",
+        "containerlab": "aisp-hybrid-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r3": {
+      "index": "2",
+      "shortname": "r3",
+      "longname": "clab-aisp-hybrid-lab-r3",
+      "fqdn": "r3.aisp-hybrid-lab.io",
+      "group": "",
+      "labdir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r3",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-48ba4a0dbe03",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r3",
+        "clab-node-longname": "clab-aisp-hybrid-lab-r3",
+        "clab-node-name": "r3",
+        "clab-node-type": "",
+        "clab-owner": "aalghzalymhmd424",
+        "clab-topo-file": "/home/aalghzalymhmd424/aisp_hybrid_lab/topology.clab.yml",
+        "containerlab": "aisp-hybrid-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r4": {
+      "index": "3",
+      "shortname": "r4",
+      "longname": "clab-aisp-hybrid-lab-r4",
+      "fqdn": "r4.aisp-hybrid-lab.io",
+      "group": "",
+      "labdir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r4",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-48ba4a0dbe03",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r4",
+        "clab-node-longname": "clab-aisp-hybrid-lab-r4",
+        "clab-node-name": "r4",
+        "clab-node-type": "",
+        "clab-owner": "aalghzalymhmd424",
+        "clab-topo-file": "/home/aalghzalymhmd424/aisp_hybrid_lab/topology.clab.yml",
+        "containerlab": "aisp-hybrid-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r5": {
+      "index": "4",
+      "shortname": "r5",
+      "longname": "clab-aisp-hybrid-lab-r5",
+      "fqdn": "r5.aisp-hybrid-lab.io",
+      "group": "",
+      "labdir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r5",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-48ba4a0dbe03",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r5",
+        "clab-node-longname": "clab-aisp-hybrid-lab-r5",
+        "clab-node-name": "r5",
+        "clab-node-type": "",
+        "clab-owner": "aalghzalymhmd424",
+        "clab-topo-file": "/home/aalghzalymhmd424/aisp_hybrid_lab/topology.clab.yml",
+        "containerlab": "aisp-hybrid-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r6": {
+      "index": "5",
+      "shortname": "r6",
+      "longname": "clab-aisp-hybrid-lab-r6",
+      "fqdn": "r6.aisp-hybrid-lab.io",
+      "group": "",
+      "labdir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r6",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-48ba4a0dbe03",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r6",
+        "clab-node-longname": "clab-aisp-hybrid-lab-r6",
+        "clab-node-name": "r6",
+        "clab-node-type": "",
+        "clab-owner": "aalghzalymhmd424",
+        "clab-topo-file": "/home/aalghzalymhmd424/aisp_hybrid_lab/topology.clab.yml",
+        "containerlab": "aisp-hybrid-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r7": {
+      "index": "6",
+      "shortname": "r7",
+      "longname": "clab-aisp-hybrid-lab-r7",
+      "fqdn": "r7.aisp-hybrid-lab.io",
+      "group": "",
+      "labdir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r7",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-48ba4a0dbe03",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r7",
+        "clab-node-longname": "clab-aisp-hybrid-lab-r7",
+        "clab-node-name": "r7",
+        "clab-node-type": "",
+        "clab-owner": "aalghzalymhmd424",
+        "clab-topo-file": "/home/aalghzalymhmd424/aisp_hybrid_lab/topology.clab.yml",
+        "containerlab": "aisp-hybrid-lab"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r8": {
+      "index": "7",
+      "shortname": "r8",
+      "longname": "clab-aisp-hybrid-lab-r8",
+      "fqdn": "r8.aisp-hybrid-lab.io",
+      "group": "",
+      "labdir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r8",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-48ba4a0dbe03",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/aalghzalymhmd424/aisp_hybrid_lab/clab-aisp-hybrid-lab/r8",
+        "clab-node-longname": "clab-aisp-hybrid-lab-r8",
+        "clab-node-name": "r8",
+        "clab-node-type": "",
+        "clab-owner": "aalghzalymhmd424",
+        "clab-topo-file": "/home/aalghzalymhmd424/aisp_hybrid_lab/topology.clab.yml",
+        "containerlab": "aisp-hybrid-lab"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:fd:85:40",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ec:14:39",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:a2:85:4b",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:85:91:34",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r3",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:d6:51:c4",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:c3:30:69",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r4",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:89:3e:d9",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r5",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:4d:82:86",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r5",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:d6:d8:e8",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r6",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:74:b8:a4",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r6",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:33:dc:67",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r7",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:b2:bb:30",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r7",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:90:ef:57",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r8",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:e5:91:1a",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
