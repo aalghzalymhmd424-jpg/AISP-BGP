@@ -1,6 +1,10 @@
 
 # AISP-BGP: AI-Secured Border Gateway Protocol Engine & Hybrid Lab
+# AISP-BGP: AI-Driven BGP Security Framework
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13645391.svg)](https://doi.org/10.5281/zenodo.13645391)
+
+An AI-driven hybrid security framework for real-time BGP hijack detection and dynamic telemetry validation.
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Containerlab](https://img.shields.io/badge/Containerlab-Hybrid--Topology-blue)](https://containerlab.dev/)
 [![FRRouting](https://img.shields.io/badge/Routing%20Engine-FRRouting%20v8.x-orange)](https://frrouting.org/)
