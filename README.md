@@ -102,7 +102,7 @@ if __name__ == '__main__':
     run()
 🧪 Experimental Validation & Live Execution Evidence
 The prototype was validated inside Google Cloud Shell using Docker, Containerlab, and FRRouting.
-![AISP-BGP Mitigation Benchmark](https://github.com/user-attachments/assets/68363e01-1de9-4491-9977-b0d9097c27d2)
+![AISP-BGP Mitigation Benchmark](aisp_mitigation_results.png)
 
 1. BGP Routing Table Verification (FRR RIB)
 Convergence verification on router R4 (AS65101) confirming receipt of legitimate network prefix 192.168.10.0/24:
